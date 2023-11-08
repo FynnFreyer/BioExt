@@ -139,12 +139,7 @@ setup(
         'BioExt.uds': 'BioExt/uds',
         'BioExt.untranslate': 'BioExt/untranslate'
         },
-    package_data={
-        'BioExt': [
-            'data/fonts/ttf/*.ttf',
-            'data/scorematrices/*.txt'
-            ] + _installrefdirs
-        },
+    package_data={'BioExt': ['data/**']},
     scripts=[
         'scripts/bam2fna',
         'scripts/bam2msa',
